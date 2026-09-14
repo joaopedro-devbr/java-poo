@@ -1,5 +1,5 @@
 // Exercício: Problema Triângulo - Introdução à POO
-// Objetivo: Ler os lados de dois triângulos, instanciar os objetos Triangle e calcular a área no programa principal.
+// Objetivo: Delegar o cálculo da área para o método area() do objeto Triangle e exibir os resultados.
 
 package application;
 
@@ -28,11 +28,8 @@ public class Program {
         y.b = sc.nextDouble();
         y.c = sc.nextDouble();
 
-        double p = (x.a + x.b + x.c) / 2.0;
-        double areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
-
-        p = (y.a + y.b + y.c) / 2.0;
-        double areaY = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+        double areaX = x.area();
+        double areaY = y.area();
 
         System.out.println("Triangle X area: " + String.format("%.4f", areaX));
 
