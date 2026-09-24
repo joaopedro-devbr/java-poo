@@ -1,67 +1,41 @@
 // Exercício: Alturas - Vetores de Objetos
-// Objetivo: Ler dados de N pessoas, calcular a altura média e exibir a porcentagem e os nomes dos menores de 16 anos.
+// Objetivo: Entidade de domínio para representar uma pessoa com nome, idade e altura.
 
-package application;
+package entities;
 
-import java.util.Locale;
-import java.util.Scanner;
+public class Person {
+    
+    private String name;
+    private int age;
+    private double height;
 
-import entities.Person;
+    public Person(String name, int age, double height) {
+        this.name = name;
+        this.age = age;
+        this.height = height;
+    }
 
-public class Program {
-    public static void main(String[] args) {
-        
-        Locale.setDefault(Locale.US);
-        Scanner sc = new Scanner(System.in);
+    public String getName() {
+        return name;
+    }
 
-        System.out.print("Quantas pessoas serao digitadas? ");
-        int n = sc.nextInt();
-        sc.nextLine();
+    public void setName(String name) {
+        this.name = name;
+    }
 
-        Person[] vect = new Person[n];
+    public int getAge() {
+        return age;
+    }
 
-        for (int i = 0; i < vect.length; i++) {
-            System.out.println("Dados da " + (i + 1) + "a pessoa:");
+    public void setAge(int age) {
+        this.age = age;
+    }
 
-            System.out.print("Nome: ");
-            String name = sc.nextLine();
+    public double getHeight() {
+        return height;
+    }
 
-            System.out.print("Idade: ");
-            int age = sc.nextInt();
-
-            System.out.print("Altura: ");
-            double height = sc.nextDouble();
-
-            sc.nextLine();
-            vect[i] = new Person(name, age, height);
-        }
-
-        double sum = 0.0;
-        for (int i = 0; i < vect.length; i++) {
-            sum += vect[i].getHeight();
-        }
-
-        double avg = sum / n;
-
-        System.out.println();
-        System.out.printf("Altura media: %.2f%n", avg);
-
-        int count = 0;
-        for (int i = 0; i < vect.length; i++) {
-            if (vect[i].getAge() < 16) {
-                count++;
-            }
-        }
-
-        double percent = ((double) count / n) * 100.0;
-        System.out.printf("Pessoas com menos de 16 anos: %.1f%%%n", percent);
-
-        for (int i = 0; i < vect.length; i++) {
-            if (vect[i].getAge() < 16) {
-                System.out.println(vect[i].getName());
-            }
-        }
-
-        sc.close();
+    public void setHeight(double height) {
+        this.height = height;
     }
 }
