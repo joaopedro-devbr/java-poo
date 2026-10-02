@@ -1,6 +1,6 @@
 # ☕ Java - Programação Orientada a Objetos (POO)
 
-Repositório dedicado aos meus estudos de Programação Orientada a Objetos em Java, acompanhando o curso do professor Nélio Alves e desenvolvendo projetos práticos.
+Repositório dedicado aos meus estudos de Programação Orientada a Objetos em Java.
 
 ---
 
