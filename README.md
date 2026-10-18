@@ -1,24 +1,28 @@
-# ☕ Java - Programação Orientada a Objetos (POO)
+# ☕ Java e Programação Orientada a Objetos (POO)
 
-Repositório dedicado aos meus estudos de Programação Orientada a Objetos em Java.
+Repositório dedicado aos estudos de Programação Orientada a Objetos em Java, baseado no curso completo do professor **Nélio Alves**.
 
 ---
 
 ## 🎯 Objetivos
 
-- Dominar os pilares da POO (Abstração, Encapsulamento, Herança e Polimorfismo).
-- Aplicar padrões de organização profissional em Java (`entities` e `application`).
-- Consolidar a transição da lógica de programação estruturada para o desenvolvimento de software orientado a objetos.
+* Compreender e aplicar os pilares da POO (Abstração, Encapsulamento, Herança e Polimorfismo).
+* Organizar projetos em camadas utilizando boas práticas (`entities`, `application`, `enums`, `exceptions`, etc.).
+* Dominar conceitos essenciais da linguagem: coleções, manipulação de datas, tratamento de exceções, I/O de ficheiros e Generics.
 
 ---
 
-## 📂 Estrutura do Repositório
+## 📁 Estrutura do Repositório
 
 ```text
 java-poo/
-├── 01-introducao-poo/               # Classes, objetos, atributos e métodos
-├── 02-membros-estaticos/            # Funções utilitárias e constantes
-├── 03-construtores-encapsulamento/  # Sobrecarga, palavra-chave this, getters e setters
-├── 04-memoria-vetores-listas/       # Alocação de memória, arrays e ArrayList
-├── 05-heranca-polimorfismo/         # Reuso, sobrescrita, super e classes abstratas
+├── 01-introducao-poo/                        # Classes, objetos, atributos, métodos, membros estáticos
+├── 02-construtores-sobrecarga-encapsulamento/ # Construtores, palavra 'this', sobrecarga, encapsulamento (getters/setters)
+├── 03-comportamento-de-memoria-arrays-listas/ # Tipos referência vs valor, garbage collector, vetores, boxing/unboxing, List, matrizes
+├── 04-trabalhando-com-datas-java-time/        # Instanciação, formatação, conversão de fuso e cálculos com Instant, LocalDate, LocalDateTime, Duration
+├── 05-enumeracoes-composicao/                # Enums, composição de objetos (relações "tem-um")
+├── 06-heranca-polimorfismo/                  # Reuso de código, upcasting/downcasting, sobrescrita (@Override), classes e métodos abstratos
+├── 07-tratamento-de-excecoes/                # Bloco try-catch, exceções personalizadas (Custom Exceptions)
+├── 08-trabalhando-com-arquivos/              # File, Scanner, FileReader, BufferedReader, FileWriter, BufferedWriter
+├── 09-interfaces/                            # Inversão de controlo, injeção de dependência, Comparable, Default methods
 └── README.md
