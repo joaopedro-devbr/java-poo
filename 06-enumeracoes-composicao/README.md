@@ -7,3 +7,4 @@ Estudos sobre o uso de tipos enumerados (`enum`) e o conceito de composição de
 * Conversão de String para Enum
 * Composição de Objetos (relações entre entidades)
 * Exercícios práticos de contratos de trabalhadores e pedidos
+
